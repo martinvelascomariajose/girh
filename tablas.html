@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tablas de Datos - Tesis</title>
+  <style>
+    table { border-collapse: collapse; margin-bottom: 40px; width: 100%; }
+    th, td { border: 1px solid #999; padding: 8px; text-align: left; }
+    th { background-color: #eee; }
+    h3 { margin-top: 50px; }
+  </style>
+</head>
+<body>
+  <h1>Tablas de Datos - Tesis Doctoral</h1>
+
+  <h3>Agrícola Extensivo</h3>
+  <a href="datos/agricolaextensivo.csv" download>📥 Descargar CSV</a>
+  <table id="tabla-agricolaextensivo"></table>
+
+  <h3>Agrícola Intensivo</h3>
+  <a href="datos/agricolaintensivo.csv" download>📥 Descargar CSV</a>
+  <table id="tabla-agricolaintensivo"></table>
+
+  <h3>Bibliotecas</h3>
+  <a href="datos/bibliotecas.csv" download>📥 Descargar CSV</a>
+  <table id="tabla-bibliotecas"></table>
+
+  <h3>Clubes</h3>
+  <a href="datos/clubes.csv" download>📥 Descargar CSV</a>
+  <table id="tabla-clubes"></table>
+
+  <h3>Criaderos</h3>
+  <a href="datos/criaderos.csv" download>📥 Descargar CSV</a>
+  <table id="tabla-criaderos"></table>
+
+  <h3>Delegaciones</h3>
+  <a href="datos/delegaciones.csv" download>📥 Descargar CSV</a>
+  <table id="tabla-delegaciones"></table>
+
+  <h3>Delegaciones LP</h3>
+  <a href="datos/delegacioneslp.csv" download>📥 Descargar CSV</a>
+  <table id="tabla-delegacioneslp"></table>
+
+  <h3>Establecimientos Educativos</h3>
+  <a href="datos/establecimientoseducativos.csv" download>📥 Descargar CSV</a>
+  <table id="tabla-establecimientoseducativos"></table>
+
+  <h3>Iglesias</h3>
+  <a href="datos/iglesias.csv" download>📥 Descargar CSV</a>
+  <table id="tabla-iglesias"></table>
+
+  <h3>Industrias</h3>
+  <a href="datos/industrias.csv" download>📥 Descargar CSV</a>
+  <table id="tabla-industrias"></table>
+
+  <h3>Límite PGP</h3>
+  <a href="datos/limitePGP.csv" download>📥 Descargar CSV</a>
+  <table id="tabla-limitePGP"></table>
+
+  <h3>Localidades</h3>
+  <a href="datos/localidades.csv" download>📥 Descargar CSV</a>
+  <table id="tabla-localidades"></table>
+
+  <h3>Periurbano</h3>
+  <a href="datos/periurbano.csv" download>📥 Descargar CSV</a>
+  <table id="tabla-periurbano"></table>
+
+  <h3>Provincias</h3>
+  <a href="datos/provincias.csv" download>📥 Descargar CSV</a>
+  <table id="tabla-provincias"></table>
+
+  <h3>Radios 2022</h3>
+  <a href="datos/radios22.csv" download>📥 Descargar CSV</a>
+  <table id="tabla-radios22"></table>
+
+  <h3>Radios Área 2022</h3>
+  <a href="datos/radiosarea22.csv" download>📥 Descargar CSV</a>
+  <table id="tabla-radiosarea22"></table>
+
+  <h3>Residencial</h3>
+  <a href="datos/residencial.csv" download>📥 Descargar CSV</a>
+  <table id="tabla-residencial"></table>
+
+  <h3>Sociedades de Fomento</h3>
+  <a href="datos/sociedadesfomento.csv" download>📥 Descargar CSV</a>
+  <table id="tabla-sociedadesfomento"></table>
+
+  <script>
+    const archivos = [
+      'agricolaextensivo','agricolaintensivo','bibliotecas','clubes','criaderos','delegaciones','delegacioneslp',
+      'establecimientoseducativos','iglesias','industrias','limitePGP','localidades','periurbano','provincias',
+      'radios22','radiosarea22','residencial','sociedadesfomento'
+    ];
+
+    archivos.forEach(nombre => {
+      fetch(`datos/${nombre}.csv`)
+        .then(res => res.text())
+        .then(data => {
+          const filas = data.trim().split('\n');
+          const cabecera = filas[0].split(',');
+          let html = '<thead><tr>' + cabecera.map(col => `<th>${col}</th>`).join('') + '</tr></thead><tbody>';
+
+          for (let i = 1; i < filas.length; i++) {
+            const columnas = filas[i].split(',');
+            html += '<tr>' + columnas.map(col => `<td>${col}</td>`).join('') + '</tr>';
+          }
+
+          html += '</tbody>';
+          document.getElementById(`tabla-${nombre}`).innerHTML = html;
+        });
+    });
+  </script>
+</body>
+</html>
