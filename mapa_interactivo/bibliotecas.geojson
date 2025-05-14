@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "bibliotecas",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "gid": 1, "name": "Biblioteca Municipal Laguna de los Padres", "descriptio": null, "timestamp": null, "begin": null, "end": null, "altitudemo": null, "tessellate": -1.0, "extrude": 0.0, "visibility": -1.0, "draworder": null, "icon": null, "layer": "Biblioteca Municipal Laguna de los Padres Biblioteca Municipal Laguna de los Padres.kmz", "path": "C:\\mapas homogeneos TESIS DOCTORAL\\bibliotecas\\Biblioteca Municipal Laguna de los Padres.kmz|layername=Biblioteca Municipal Laguna de los Padres.kmz" }, "geometry": { "type": "Point", "coordinates": [ -57.719937500789598, -37.939937500107327, 0.0 ] } },
+{ "type": "Feature", "properties": { "gid": 2, "name": "Biblioteca Pública Municipal Sierra de Los Padres", "descriptio": null, "timestamp": null, "begin": null, "end": null, "altitudemo": null, "tessellate": -1.0, "extrude": 0.0, "visibility": -1.0, "draworder": null, "icon": null, "layer": "Biblioteca Pública Municipal Sierra de Los Padres Biblioteca Pública Municipal Sierra de Los Padres.kmz", "path": "C:\\mapas homogeneos TESIS DOCTORAL\\bibliotecas\\Biblioteca Pública Municipal Sierra de Los Padres.kmz|layername=Biblioteca Pública Municipal Sierra de Los Padres.kmz" }, "geometry": { "type": "Point", "coordinates": [ -57.747190625592147, -37.918060596638917, 0.0 ] } }
+]
+}
