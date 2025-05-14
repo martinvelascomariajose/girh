@@ -1,0 +1,25 @@
+gid,objectid,entidad,objeto,fna,gna,nam,sag,fdc,in1,shape_star,shape_stle
+1,427,0,Provincia,Ciudad Autónoma de Buenos Aires,Ciudad Autónoma,Ciudad Autónoma de Buenos Aires,IGN,Geografía,"02",0.0202417882723,0.743806468471
+2,428,0,Provincia,Provincia del Neuquén,Provincia,Neuquén,IGN,Geografía,"58",9.77181087612,21.5159845829
+3,429,0,Provincia,Provincia de La Pampa,Provincia,La Pampa,IGN,Geografía,"42",14.5530193016,19.665614461
+4,430,0,Provincia,Provincia de Mendoza,Provincia,Mendoza,IGN,Geografía,"50",14.6583879434,23.2599861838
+5,431,0,Provincia,Provincia de San Luis,Provincia,San Luis,IGN,Geografía,"74",7.33377055086,14.490195786
+6,432,0,Provincia,Provincia de Córdoba,Provincia,Córdoba,IGN,Geografía,"14",15.7483284893,18.4531148919
+7,433,0,Provincia,Provincia de Santa Fe,Provincia,Santa Fe,IGN,Geografía,"82",12.5528384103,20.8522796644
+8,434,0,Provincia,Provincia de Entre Ríos,Provincia,Entre Ríos,IGN,Geografía,"30",7.48648662083,14.3590911819
+9,435,0,Provincia,Provincia de San Juan,Provincia,San Juan,IGN,Geografía,"70",8.32844121046,19.4456057212
+10,436,0,Provincia,Provincia de La Rioja,Provincia,La Rioja,IGN,Geografía,"46",8.52921551759,16.4261323025
+11,437,0,Provincia,Provincia de Catamarca,Provincia,Catamarca,IGN,Geografía,"10",9.25694486638,21.7060822144
+12,438,0,Provincia,Provincia de Tucumán,Provincia,Tucumán,IGN,Geografía,"90",2.05338789856,8.40337286742
+13,439,0,Provincia,Provincia de Jujuy,Provincia,Jujuy,IGN,Geografía,"38",4.70083616412,13.8947547895
+14,440,0,Provincia,Provincia del Chaco,Provincia,Chaco,IGN,Geografía,"22",9.02488881377,19.2394191953
+15,441,0,Provincia,Provincia de Formosa,Provincia,Formosa,IGN,Geografía,"34",6.74572052174,21.8497108589
+16,442,0,Provincia,Provincia de Santiago del Estero,Provincia,Santiago del Estero,IGN,Geografía,"86",12.5402243248,16.3530914888
+17,443,0,Provincia,"Provincia de Tierra del Fuego, Antártida e Islas del Atlántico Sur",Provincia,"Tierra del Fuego, Antártida e Islas del Atlántico Sur",IGN,Geografía,"94",566.267611798,749.983159084
+18,444,0,Provincia,Provincia de Santa Cruz,Provincia,Santa Cruz,IGN,Geografía,"78",29.9438758689,40.8355525833
+19,445,0,Provincia,Provincia del Chubut,Provincia,Chubut,IGN,Geografía,"26",25.0858342989,38.8379453893
+20,446,0,Provincia,Provincia de Río Negro,Provincia,Río Negro,IGN,Geografía,"62",21.4511368555,30.9972743096
+21,447,0,Provincia,Provincia de Buenos Aires,Provincia,Buenos Aires,IGN,Geografía,"06",30.8059975115,34.0355761258
+22,448,0,Provincia,Provincia de Corrientes,Provincia,Corrientes,IGN,Geografía,"18",8.23567880627,20.5946719742
+23,449,0,Provincia,Provincia de Misiones,Provincia,Misiones,IGN,Geografía,"54",2.71700189868,13.3155594203
+24,450,0,Provincia,Provincia de Salta,Provincia,Salta,IGN,Geografía,"66",13.8178053698,30.2759503326
