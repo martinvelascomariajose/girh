@@ -44,7 +44,15 @@
       fetch('mapa_interactivo/' + nombre)
         .then(res => res.json())
         .then(data => {
-          capas[nombreCapa] = L.geoJSON(data).addTo(map);
+          capas[nombreCapa] = L.geoJSON(data, {
+            onEachFeature: function (feature, layer) {
+              let contenido = '';
+              for (const clave in feature.properties) {
+                contenido += `<strong>${clave}:</strong> ${feature.properties[clave]}<br>`;
+              }
+              layer.bindPopup(contenido);
+            }
+          }).addTo(map);
         });
     });
 
